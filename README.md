@@ -4,19 +4,29 @@ A library to get element, children, parent of the DOM
 ## Methods
 Available methods of get.js are the following:
 
-### Element/s
+### Get Element/s
 ```javascript
 get.el(".el-name"); // return single element
-```
-
-```javascript
 get.elById("#el-name"); // return single element with ID keyword
-```
-
-```javascript
 get.all("li"); // return nodelist
+get.allArray("li"); // return array
+```
+### Get Parent
+```javascript
+get.parentOf(el, ".parent-class"); // return parent by class keyword or ID
 ```
 
+### Get Children
 ```javascript
-get.allArray("li"); // return array
+get.childrenOf(el, ".children-class"); // return children
+```
+
+### Get Array Index
+```javascript
+get.index(el); // return array index of an element
+```
+
+### Get Siblings
+```javascript
+get.siblings(el); // return element's siblings
 ```
